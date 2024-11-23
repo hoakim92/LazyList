@@ -1,0 +1,15 @@
+TestCase     LazyColumn VerticalArrangement by default
+Precondition Create LazyColumn with 10 items and do not specify VerticalArrangement
+Result 		 LazyColumn works normal way and elements positioned to the top of the axis x.
+
+TestCase     LazyColumn VerticalArrangement by default reversed
+Precondition Create LazyColumn with 10 items, reverseLayout = true and do not specify VerticalArrangement
+Result 		 LazyColumn works normal way and elements positioned to the bottom of the axis x.
+
+TestCase     LazyColumn VerticalArrangement=Top
+Precondition Create LazyColumn with 10 items and VerticalArrangement=Top
+Result 		 LazyColumn works normal way and elements positioned to the top of the axis x.
+
+TestCase     LazyColumn VerticalArrangement=Bottom
+Precondition Create LazyColumn with 10 items and VerticalArrangement=Bottom
+Result 		 LazyColumn works normal way and elements positioned to the bottom of the axis x.

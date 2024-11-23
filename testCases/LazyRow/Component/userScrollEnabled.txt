@@ -1,0 +1,6 @@
+TestCase     LazyRow userScrollEnabled
+Precondition Create LazyRow with 10 items and userScrollEnabled=false
+Result 		 LazyRow displayed but User couldn't scroll LazyRow items  
+
+//We don't check userScrollEnabled=true because it's value by default and it checked in other tests
+	

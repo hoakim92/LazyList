@@ -1,0 +1,4 @@
+TestCase LazyColumn FlingBehaviour
+//Need further exploration
+//Part of gesture handle
+//For test need to implement custom FlingBehaviour and check it

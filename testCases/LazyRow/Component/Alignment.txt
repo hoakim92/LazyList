@@ -1,0 +1,19 @@
+TestCase     LazyRow VerticalAlignment by default
+Precondition Create LazyRow with 10 items and do not specify VerticalAlignment
+Result 		 LazyRow works normal way and elements alignment to the bottom of the x axis.
+
+TestCase     LazyRow VerticalAlignment by default with reverseLayout
+Precondition Create LazyRow with 10 items and do not specify VerticalAlignment
+Result 		 LazyRow displayed and Items alignment to the top of the x axis.
+
+TestCase     LazyRow VerticalAlignment=Top
+Precondition Create LazyRow with 10 items and VerticalAlignment=Top
+Result 		 LazyRow displayed and Items alignment to the top of the x axis.
+
+TestCase     LazyRow VerticalAlignment=CenterVertically
+Precondition Create LazyRow with 10 items and VerticalAlignment=CenterVertically
+Result 		 LazyRow displayed and Items alignment to the center of the x axis.
+
+TestCase     LazyRow VerticalAlignment=End
+Precondition Create LazyRow with 10 items and VerticalAlignment=End
+Result 		 LazyRow displayed and Items alignment to the bottom of the x axis.

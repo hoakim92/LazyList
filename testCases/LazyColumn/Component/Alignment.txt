@@ -1,0 +1,19 @@
+TestCase     LazyColumn HorizontalAlignment by default
+Precondition Create LazyColumn with 10 items and do not specify HorizontalAlignment
+Result 		 LazyColumn works normal way and elements alignment to the bottom of the y axis.
+
+TestCase     LazyColumn HorizontalAlignment by default with reverseLayout
+Precondition Create LazyColumn with 10 items and do not specify HorizontalAlignment
+Result 		 LazyColumn displayed and Items alignment to the top of the y axis.
+
+TestCase     LazyColumn HorizontalAlignment=Start
+Precondition Create LazyColumn with 10 items and HorizontalAlignment=Start
+Result 		 LazyColumn displayed and Items alignment to the top of the y axis.
+
+TestCase     LazyColumn HorizontalAlignment=CenterHorizontally
+Precondition Create LazyColumn with 10 items and HorizontalAlignment=CenterHorizontally
+Result 		 LazyColumn displayed and Items alignment to the center of the y axis.
+
+TestCase     LazyColumn HorizontalAlignment=End
+Precondition Create LazyColumn with 10 items and HorizontalAlignment=End
+Result 		 LazyColumn displayed and Items alignment to the bottom of the y axis.

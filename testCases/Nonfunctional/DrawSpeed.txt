@@ -1,0 +1,9 @@
+TestCase     LazyColumn with 1000 items
+Precondition Create default LazyColumn with 1000 items
+Steps        Scroll from first to last and back
+Result       Draw speed less then 16ms
+
+TestCase     LazyRow with 1000 items
+Precondition Create default LazyRow with 1000 items
+Steps        Scroll from first to last and back
+Result       Draw speed less then 16ms

@@ -1,0 +1,6 @@
+TestCase     LazyColumn userScrollEnabled
+Precondition Create LazyColumn with 10 items and userScrollEnabled=false
+Result 		 LazyColumn displayed but User couldn't scroll LazyColumn items  
+
+//We don't check userScrollEnabled=true because it's value by default and it checked in other tests
+	

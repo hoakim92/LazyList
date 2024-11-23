@@ -1,0 +1,11 @@
+TestCase     LazyColumn ContentPadding by default 
+Precondition Create LazyColumn with 20 items and do not specify contentPadding
+Steps        Scroll to 20'th item and then scroll to first item
+Result       LazyColumn works normal way and padding should be zero
+
+TestCase     LazyColumn ContentPadding with value 
+Precondition Create LazyColumn with 20 items and contentPadding=2.dp
+Steps        Scroll to 20'th item and then scroll to first item
+Result       LazyColumn works normal way and padding for each direction should be 2dp
+//extend this case to all possible numbers of padding arguments(2.dp,4.dp) or (2.dp,4.dp,6.dp,8.dp)
+//could we set negative padding ?

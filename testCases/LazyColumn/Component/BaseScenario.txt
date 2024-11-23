@@ -1,0 +1,43 @@
+TestCase     Empty LazyColumn shouldn't contain elements
+Precondition Create LazyColumn without items
+Result       LazyColumn element hidden
+//Tried to check by adding background color for LazyColumn
+//Tests think it's displayed but when try to check it in app I don't see any element
+//I couldn't find description for such behaviour in documentattion
+//Need to discuss
+	
+TestCase     LazyColumn (all elemets are placed on screen)
+Precondition LazyColumn with 3 elements (all elements are placed on screen)
+Result       LazyColumn displayed and contains 3 element
+
+TestCase     LazyColumn (scroll to the middle)
+Precondition Create LazyColumn with 20 items
+Steps        Scroll to 10'th item
+Result       LazyColumn load new elements and user able to scroll it 
+
+TestCase     LazyColumn (scroll to the end)
+Precondition Create LazyColumn with 20 items
+Steps        Scroll to 20'th item
+Result       LazyColumn load new elements and user able to scroll it 
+
+TestCase     LazyColumn (scroll to the middle with orientation change)
+Precondition Create LazyColumn with 20 items
+Steps        Scroll to 10'th item
+			 Change orientation to the landscape
+Result       LazyColumn load new elements and user able to scroll it 
+
+TestCase     LazyColumn (scroll to the middle with double orientation change)
+Precondition Create LazyColumn with 20 items
+Steps        Scroll to 10'th item
+			 Change orientation to the landscape
+			 Scroll to 20'th item
+			 Change orientation to the portrait
+			 Scroll to 10'th item
+Result       LazyColumn load new elements, restore old elemets and user able to scroll it 
+	
+TestCase     LazyColumn (scroll to the end and back to begin)
+Precondition Create LazyColumn with 20 items
+Steps        Scroll to 20'th item and then scroll to first item
+Result       LazyColumn load new elements and user able to scroll it 
+
+//check state of LazyList correctly restored after switch to another app

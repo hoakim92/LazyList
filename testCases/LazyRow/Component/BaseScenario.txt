@@ -1,0 +1,43 @@
+TestCase     Empty LazyRow shouldn't contain elements
+Precondition Create LazyRow without items
+Result       LazyRow element hidden
+//Tried to check by adding background color for LazyRow
+//Tests think it's displayed but when try to check it in app I don't see any element
+//I couldn't find description for such behaviour in documentattion
+//Need to discuss
+	
+TestCase     LazyRow (all elemets are placed on screen)
+Precondition LazyRow with 3 elements (all elements are placed on screen)
+Result       LazyRow displayed and contains 3 element
+
+TestCase     LazyRow (scroll to the middle)
+Precondition Create LazyRow with 20 items
+Steps        Scroll to 10'th item
+Result       LazyRow load new elements and user able to scroll it 
+
+TestCase     LazyRow (scroll to the middle with orientation change)
+Precondition Create LazyRow with 20 items
+Steps        Scroll to 10'th item
+			 Change orientation to the landscape
+Result       LazyRow load new elements and user able to scroll it 
+
+TestCase     LazyRow (scroll to the middle with double orientation change)
+Precondition Create LazyRow with 20 items
+Steps        Scroll to 10'th item
+			 Change orientation to the landscape
+			 Scroll to 20'th item
+			 Change orientation to the portrait
+			 Scroll to 10'th item
+Result       LazyRow load new elements, restore old elemets and user able to scroll it 
+
+TestCase     LazyRow (scroll to the end)
+Precondition Create LazyRow with 20 items
+Steps        Scroll to 20'th item
+Result       LazyRow load new elements and user able to scroll it 
+	
+TestCase     LazyRow (scroll to the end and back to begin)
+Precondition Create LazyRow with 20 items
+Steps        Scroll to 20'th item and then scroll to first item
+Result       LazyRow load new elements and user able to scroll it 
+
+//check state of LazyList correctly restored after switch to another app

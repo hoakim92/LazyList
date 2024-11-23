@@ -1,0 +1,15 @@
+TestCase     LazyRow HorizontalArrangement by default
+Precondition Create LazyRow with 10 items and do not specify HorizontalArrangement
+Result 		 LazyRow works normal way and elements positioned to the top of the axis y.
+
+TestCase     LazyRow HorizontalArrangement by default reversed
+Precondition Create LazyRow with 10 items, reverseLayout = true and do not specify HorizontalArrangement
+Result 		 LazyRow works normal way and elements positioned to the bottom of the axis y.
+
+TestCase     LazyRow HorizontalArrangement=Start
+Precondition Create LazyRow with 10 items and HorizontalArrangement=Start
+Result 		 LazyRow works normal way and elements positioned to the top of the axis y.
+
+TestCase     LazyRow HorizontalArrangement=End
+Precondition Create LazyRow with 10 items and HorizontalArrangement=End
+Result 		 LazyRow works normal way and elements positioned to the bottom of the axis y.
